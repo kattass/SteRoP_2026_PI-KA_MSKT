@@ -2,12 +2,13 @@
 #define GYRO_H
 
 #include "stm32f4xx_hal.h"
-
+//Datasheet - adresy rejestrów
 #define L3GD20_REG_WHO_AM_I      0x0F
 #define L3GD20_REG_CTRL_REG1     0x20
 #define L3GD20_REG_CTRL_REG4     0x23
 #define L3GD20_REG_OUT_X_L       0x28
 
+//Prędkości kątowe z osi
 typedef struct {
     int16_t x;
     int16_t y;
